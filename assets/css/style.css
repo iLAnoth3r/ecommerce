@@ -1,38 +1,94 @@
+body {
+  margin: 0;
+}
+
 .container {
   display: grid;
   grid-template-areas:
     "header header header header"
     "sidebar main main main"
     "footer footer footer footer";
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .header {
   grid-area: header;
-  border: 1px solid black;
+  background-color: #1051a5;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
 }
 
 .sidebar {
   grid-area: sidebar;
-  border: 1px solid black;
+  display: block;
+  padding: 30px;
+  background-color: #dfdede;
 }
 
 .main {
   grid-area: main;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+  background-color: #dfdede;
 }
 
 .footer {
   grid-area: footer;
-  border: 1px solid black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
   display: flex;
-  width: 33%;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  height: 600px;
 }
 
-.box img {
+.foto {
+  height: 75%;
   width: 100%;
+}
+
+.foto img {
+  height: 100%;
+  width: 100%;
+}
+
+.gris {
+  color: rgb(127, 129, 129);
+}
+
+.categorias {
+  margin-top: 25px;
+}
+
+.sidebar p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.categorias p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.compra {
+  background-color: #1051a5;
+  height: 30px;
+  padding: 7px;
+  color: white;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
